@@ -166,7 +166,7 @@
                       <form class="form" [formGroup]="contactForm" novalidate (ngSubmit)="onContactUpdate()">
                         <div class="form-group">
                           <label for="">Email</label>
-                          <input formControlName="email" type="text"
+                          <input readonly formControlName="email" type="text"
                             [class.is-invalid]="c.email.invalid && c.email.touched" class="form-control rounded-0"
                             required>
                           <div *ngIf="submitted && c.email.errors" class="alert alert-danger">
