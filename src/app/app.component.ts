@@ -1,6 +1,6 @@
 import { Component , ViewChild ,AfterViewInit } from '@angular/core';
 import { UsersService } from './services/users.service';
-import { User } from './Models/user.model';
+import { User } from './models/user.model';
 import { CookieService } from 'ngx-cookie-service';
 import { Router } from '@angular/router';
 import { CommunicationService } from './services/communication.service';

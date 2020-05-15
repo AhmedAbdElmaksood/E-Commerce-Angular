@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { CanActivate, Router } from '@angular/router';
 import { AuthenticationService } from './authentication.service';
-import { User } from '../Models/user.model';
+// import { User } from '../models/user.model';
 import { UsersService } from './users.service';
 import { CookieService } from 'ngx-cookie-service';
 import decode from 'jwt-decode';
