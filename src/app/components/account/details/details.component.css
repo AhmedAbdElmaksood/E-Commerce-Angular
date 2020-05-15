@@ -1,0 +1,32 @@
+.personal_info , .account_info , .contact_info , .security{
+    position: relative;
+    top: 2px;
+}
+
+.edit{
+    float: right;
+    position: relative;
+    top: -100px;
+}
+
+.element{
+    margin-left: 130px;
+    color: grey;
+}
+
+.modal.show{
+    
+    display: block;
+}
+
+.orangeColor{
+    color: #f16821 !important;
+}
+
+.titleSize{
+    font-size: 30px;
+}
+.subTitleSize{
+    font-size: 18px;
+}
+
