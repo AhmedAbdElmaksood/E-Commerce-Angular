@@ -52,7 +52,7 @@ export class DetailsComponent implements OnInit {
     });
 
     this.contactForm = this.formBuilder.group({
-      "email": ['', [Validators.required, Validators.email]],
+      // "email": ['', [Validators.required, Validators.email]],
       "phone": ['', [Validators.required, Validators.maxLength(11), Validators.minLength, Validators.pattern("^[0][1][0-9]{9}$")]],
     });
 
