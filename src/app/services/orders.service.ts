@@ -8,7 +8,7 @@ import { HttpClient }    from '@angular/common/http';
 export class OrdersService {
 
   constructor(private client:HttpClient) { }
-  baseURL = "https://rad-e-commerce-api.herokuapp.com/"
+  baseURL = "https://rad-e-commerce-api.herokuapp.com"
   getAllOrders()
   {
     return this.client.get(`${this.baseURL}/orders`);
