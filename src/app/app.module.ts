@@ -31,9 +31,9 @@ import { ProductsService } from './services/products.service';
 import { UsersService } from './services/users.service';
 import { CartComponent } from './components/cart/cart.component';
 import { CommunicationService } from './services/communication.service';
-import {user} from './models/user.model'
-import {order} from './models/order.model'
-import {product} from './models/product.model'
+import {user} from './models/user-model'
+import {order} from './models/order-model'
+import {product} from './models/product-model'
 
 
 
