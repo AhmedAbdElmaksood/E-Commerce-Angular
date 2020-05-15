@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, FormControl, AbstractControl } from '@angular/forms';
 import { UsersService } from 'src/app/services/users.service';
-import { User } from 'src/app/models/user.model';
+import { User } from '../../models/user.model';
 import { OrdersService } from 'src/app/services/orders.service';
-import { Order } from 'src/app/models/order.model';
+import { Order } from '../../models/order.model';
 import { ToastrService } from 'ngx-toastr';
 import { Router } from '@angular/router';
 import { CommunicationService } from 'src/app/services/communication.service';
