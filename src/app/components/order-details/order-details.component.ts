@@ -1,8 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { OrdersService } from 'src/app/services/orders.service';
 import { ActivatedRoute } from '@angular/router';
-import { Order } from '../../models/order.model';
-
+import {order} from '../../models/order.model'
 
 @Component({
   selector: 'app-order-details',
@@ -10,7 +9,7 @@ import { Order } from '../../models/order.model';
   styleUrls: ['./order-details.component.css']
 })
 export class OrderDetailsComponent implements OnInit, OnDestroy {
-  order: Order;
+  order: order;
   subscriber;
   shippingDate;
   id;

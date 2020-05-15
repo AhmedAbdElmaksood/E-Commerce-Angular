@@ -1,4 +1,4 @@
-export class Order {
+export class order {
     _id: string;
     date : Date ;
     address : string ;

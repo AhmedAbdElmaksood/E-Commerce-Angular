@@ -31,9 +31,9 @@ import { ProductsService } from './services/products.service';
 import { UsersService } from './services/users.service';
 import { CartComponent } from './components/cart/cart.component';
 import { CommunicationService } from './services/communication.service';
-import {User} from './models/user.model'
-import {Order} from './models/order.model'
-import {Product} from './models/product.model'
+import {user} from './models/user.model'
+import {order} from './models/order.model'
+import {product} from './models/product.model'
 
 
 
@@ -56,9 +56,9 @@ import {Product} from './models/product.model'
     MessageComponent,
     CheckoutFormComponent,
     CartComponent,
-    User,
-    Order,
-    Product
+    user,
+    order,
+    product
   ],
   imports: [
     ReactiveFormsModule,
@@ -70,9 +70,9 @@ import {Product} from './models/product.model'
     ToastrModule.forRoot(),
     CommonModule,
     FontAwesomeModule,
-    User,
-    Order,
-    Product
+    user,
+    order,
+    product
   ],
   providers: [
     AuthenticationService,

@@ -1,6 +1,6 @@
 import { Component , ViewChild ,AfterViewInit } from '@angular/core';
 import { UsersService } from './services/users.service';
-import { User } from './models/user.model';
+import { user } from './models/user.model';
 import { CookieService } from 'ngx-cookie-service';
 import { Router } from '@angular/router';
 import { CommunicationService } from './services/communication.service';
@@ -18,7 +18,7 @@ export class AppComponent {
 
   title = 'Project-Frontend';
   userLoaded;
-  user: User;
+  user: user;
   cartCount;
   constructor(private router: Router, private _userService: UsersService, private cookie: CookieService,  private communicationService: CommunicationService) {
     communicationService.changeEmitted$.subscribe(data => {
@@ -46,7 +46,7 @@ export class AppComponent {
   }
 
   initializeUser(response) {
-    this.user = new User();
+    this.user = new user();
     this.user = response;
     this.cartCount = this.user.products.length;
   }

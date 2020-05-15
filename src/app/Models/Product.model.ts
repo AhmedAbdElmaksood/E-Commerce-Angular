@@ -1,4 +1,4 @@
-export class Product {
+export class product {
     _id: string;
     promotion : number ;
     isdeleted : boolean ;

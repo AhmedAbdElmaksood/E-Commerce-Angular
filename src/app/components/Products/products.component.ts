@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ProductsService } from 'src/app/services/products.service'
 import { from } from 'rxjs';
 import { FormBuilder, Validators, FormGroup } from '@angular/forms';
-import { Product } from '../../models/product.model';
+import { product } from '../../models/product.model';
 import { CookieService } from 'ngx-cookie-service';
 import decode from 'jwt-decode';
 import { ToastrService } from 'ngx-toastr';
@@ -19,7 +19,7 @@ export class ProductsComponent implements OnInit {
   Products;
   mymodel;
   Form: FormGroup;
-  product = new Product();
+  product = new product();
   imageToUpload;
   subscrription;
   productimage: File;
@@ -81,7 +81,7 @@ export class ProductsComponent implements OnInit {
 
     this.myService.addProduct(formData)
       .subscribe(
-        (data: Product) => {
+        (data: product) => {
           this.toaster.success("Product Added Succesfuly")
           this.AllProducts.push(data);
           this.initializeForm();

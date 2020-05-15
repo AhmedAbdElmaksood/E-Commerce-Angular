@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, FormControl, AbstractControl } from '@angular/forms';
 import { UsersService } from 'src/app/services/users.service';
-import { User } from '../../models/user.model';
+import { user } from '../../models/user.model';
 import { OrdersService } from 'src/app/services/orders.service';
-import { Order } from '../../models/order.model';
+import { order } from '../../models/order.model';
 import { ToastrService } from 'ngx-toastr';
 import { Router } from '@angular/router';
 import { CommunicationService } from 'src/app/services/communication.service';
@@ -15,7 +15,7 @@ import { CommunicationService } from 'src/app/services/communication.service';
 })
 export class CheckoutFormComponent implements OnInit {
   checkoutForm: FormGroup;
-  user: User;
+  user: user;
   totalPrice;
   subscriber;
   addressStatus = true;
@@ -37,7 +37,7 @@ export class CheckoutFormComponent implements OnInit {
   }
 
   initializeUser(response) {
-    this.user = new User();
+    this.user = new user();
     this.user = response;
     this.totalPrice = 0;
     this.user.products.forEach((item) => {
@@ -59,14 +59,14 @@ export class CheckoutFormComponent implements OnInit {
   }
 
   createOrder() {
-    let newOrder = new Order();
+    let newOrder = new order();
     newOrder.address = this.checkoutForm.get('address').value;
     newOrder.products = this.user.products.map((product) => {
       return { product: product.product._id, quantityordered: product.quantityordered };
     });
     newOrder.user = this.user._id;
     this.subscriber = this.ordersService.createOrder(newOrder)
-      .subscribe((user: User) => {
+      .subscribe((user: user) => {
         if (user) {
           this.toastr.success("Order Sumitted Succesfully!");
           this.user.products = [];
