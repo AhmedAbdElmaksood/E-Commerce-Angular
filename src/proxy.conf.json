@@ -1,6 +1,6 @@
 {
     "/users/*": {
-        "target": "https://rad-e-commerce-api.herokuapp.com/",
+        "target": "https://rad-e-commerce-api.herokuapp.com",
         "secure": false,
         "logLevel": "debug"
     }
