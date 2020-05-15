@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ProductsService } from 'src/app/services/products.service'
 import { from } from 'rxjs';
 import { FormBuilder, Validators, FormGroup } from '@angular/forms';
-import { Product } from 'src/app/Models/Product.model';
+import { Product } from 'src/app/Models/product.model';
 import { CookieService } from 'ngx-cookie-service';
 import decode from 'jwt-decode';
 import { ToastrService } from 'ngx-toastr';
