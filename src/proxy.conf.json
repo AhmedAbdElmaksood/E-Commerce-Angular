@@ -1,6 +1,6 @@
 {
-    "/users/register": {
-        "target": "http://localhost:3000",
+    "/users/*": {
+        "target": "https://rad-e-commerce-api.herokuapp.com/",
         "secure": false,
         "logLevel": "debug"
     }
