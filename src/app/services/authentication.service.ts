@@ -9,8 +9,8 @@ import { CookieService } from 'ngx-cookie-service';
 })
 export class AuthenticationService {
 
-private _registerUrl = "http://localhost:3000/users/register"
-private _loginUrl = "http://localhost:3000/users/login"
+private _registerUrl = "https://rad-e-commerce-api.herokuapp.com/users/register"
+private _loginUrl = "https://rad-e-commerce-api.herokuapp.com/users/login"
 
   constructor(private _httpClient :HttpClient, private cookie : CookieService) { }
 

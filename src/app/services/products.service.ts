@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class ProductsService {
 
-  baseURL: string = "http://localhost:3000";
+  baseURL: string = "https://rad-e-commerce-api.herokuapp.com/";
   
   constructor(private http: HttpClient) {
   

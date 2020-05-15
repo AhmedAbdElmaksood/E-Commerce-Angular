@@ -6,8 +6,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class UsersService {
 
-  private _getUserUrl = "http://localhost:3000/users/user"
-  private _updateUserUrl = "http://localhost:3000/users/1"
+  private _getUserUrl = "https://rad-e-commerce-api.herokuapp.com/users/user"
+  private _updateUserUrl = "https://rad-e-commerce-api.herokuapp.com/users/1"
 
   constructor(private _httpclient: HttpClient) { }
 
